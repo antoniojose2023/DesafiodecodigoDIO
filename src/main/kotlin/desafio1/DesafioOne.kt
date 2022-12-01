@@ -1,8 +1,11 @@
 package desafio1
 
-class DesafioOne {
-}
+fun main() {
+    val media = readLine()!!.toDouble();
 
-fun main(){
-    println("ddsds")
+    when {
+        media < 5 -> println("REP")
+        (media >= 5 && media < 7) -> println("REC")
+        else -> println("APR")
+    }
 }
